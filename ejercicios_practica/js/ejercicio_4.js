@@ -6,7 +6,15 @@
 
 // Ejercicios con funciones
 
-// function generarInvitados()
+function generarInvitados() {
+    let concat = "";
+    let invitado1 = prompt("Ingrese primer nombre");
+    let invitado2 = prompt("Ingreses segundo nombre");
+    let invitado3 = prompt("Ingrese tercer nombre");
+    concat += invitado1+" "+invitado2+" "+invitado3
+
+    return concat;
+}
 
 /*
 Alumno: Crear la función "generarInvitados"
@@ -30,5 +38,5 @@ en consola la lista
 */
 
 // Definir y crear la función antes de esta llamada
-invitados = generarInvitados();
+let invitados = generarInvitados();
 console.log(`Mis invitados: ${invitados}`)
